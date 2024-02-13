@@ -6,3 +6,187 @@ class RootComponent extends HTMLElement {
     this.shadow.adoptedStyleSheets = [styles];
   }
 }
+
+connectedCallback(){
+  this.ShadowRoot.innerHTML = `
+  <style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Roboto:ital,wght@0,100;1,100&family=Space+Mono:wght@700&family=Volkhov:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-color: #e5e5f5;
+}
+
+.container {
+  margin-top: 50px;
+  margin-left: 500px;
+  justify-items: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 70vh;
+  height: 110vh;
+}
+input {
+  width: 100px;
+  background-color: blue;
+}
+todo-list {
+  color: #cbc0c0;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 20px 20px 20px;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+  fill: #b5ea81;
+  
+}
+.fill {
+  color: #b5ea81;
+}
+.arrow {
+  width: 50px;
+  fill: #a9a9f5;
+}
+
+back-list {
+  margin-top: 30px;
+  display: flex;
+  color: #9d9dea;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+today-to {
+  color: #9d9dea;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+today-to h1 {
+  margin-left: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 150;
+  color: black;
+}
+.img {
+  margin-left: 250px;
+  width: 50px;
+  height: 50px;
+  fill: #9797f9;
+
+  margin-top: px;
+  margin-bottom: 10px;
+}
+
+load-to {
+  position: absolute;
+  border: 1px solid #e5e5f6;
+  border-radius: 20px;
+  height: 15px;
+  width: 410px;
+  margin-left: 10px;
+}
+
+.load {
+  position: absolute;
+  border: 1px solid #b9b9fb;
+  border-radius: 20px;
+  height: 15px;
+  width: 100px;
+  margin-left: 10px;
+  background-color: #b9b9fb;
+  z-index: 1;
+  top: 203px;
+}
+
+percent-age {
+  color: #b0b0ed;
+}
+.percentage {
+  margin-left: 150px;
+  margin-top: 3px;
+}
+hr {
+  width: 400px;
+  display: block;
+  margin-left: 30px;
+}
+
+para-graph {
+  color: #cbc0c0;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 20px 20px 20px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.tab{
+    display: flex;
+    margin-left: 40px;
+    gap: 40px;
+}
+
+click-tab{
+    border-radius: 40px;
+    background-color: #f5ed84;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    font-family:"Poppins", sans-serif ;
+    padding: 10px 10px 10px 10px;
+    width: 150px;
+}
+
+click-tab2{
+    border-radius: 40px;
+    background-color: #b5ea81;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    font-family:"Poppins", sans-serif ;
+    padding: 10px 10px 10px 10px;
+    width: 150px;
+}
+
+.tab2{
+    display: flex;
+    margin-left: 40px;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+click-tab3{
+    border-radius: 40px;
+    background-color: #f8aaaa;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    font-family:"Poppins", sans-serif ;
+    padding: 10px 10px 10px 10px;
+    width: 150px;
+}
+
+click-tab4{
+    border-radius: 40px;
+    background-color: #b3b3ef;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    font-family:"Poppins", sans-serif ;
+    padding: 10px 10px 10px 10px;
+    width: 150px;
+}
+
+  </style>`
+}
